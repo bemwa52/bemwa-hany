@@ -1,0 +1,107 @@
+
+body{
+    background: #4f95d6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(#4f95d6,#100024);  /* chrome 10-25, safari 5.1-6 */
+    background: linear-gradient(#4f95d6,#100024); /* w3c, IE 10+/ Edge, Firefox 16+, Chrom 26+, Opera 12+, Safari 7+ */
+    height: 140vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+.q{
+    color: bisque;
+    font-size: xx-large;
+    font-style: inherit;
+}
+.w{
+    color: bisque;
+    font-size: xx-large;
+    font-style: inherit;
+}
+.e{
+    color: bisque;
+    font-size: xx-large;
+    font-style: inherit;
+}
+section{
+    background: url("1.png");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ul{
+    text-align: center;
+}
+ul:hover li a{
+    opacity: 0;
+}
+ul li{
+    list-style: none;
+    margin: 40px 0;
+}
+ul li a{
+    color: honeydew;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    background: rgb(41, 157, 192);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    width: 150px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 100;
+}
+ul li a:hover{
+    transform: scale(1.5);
+    background: darkturquoise;
+    opacity: 1;
+}
+ul li::after{
+    content: attr(data-text);
+    color: bisque;
+ position: absolute;
+left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ font-size: 88px;
+font-weight: 900;
+opacity: 0;
+letter-spacing: 50px;
+pointer-events: none;
+transition: 0.5s;
+}
+ul li:hover:after{
+opacity: 0.5;
+letter-spacing: 5px;
+}
+ul li::before{
+    content: '';
+    width: 180px;
+    height: 80px;
+    background: beige;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,70%);
+    border-radius: 50%;
+    box-shadow: 0 0 80px tomato;
+    opacity: 0;
+    transition: 0.5s;
+}
+ul li:hover::before{
+    opacity: 0.5;
+    width: 80px;
+}
+.r{
+    color: bisque;
+    font-size: xx-large;
+    font-style: inherit;
+}
+.t{
+    color: rgb(238, 139, 18);
+    font-size: xx-large;
+    font-style: inherit;
+}
